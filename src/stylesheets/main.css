@@ -1,1 +1,94 @@
 /* Your styles go here */
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #b06498;
+    color: #e3a4c0;
+}
+
+header{
+    background-color: #904985;
+    color: #e3a4c0;
+    padding: 20px;
+    text-align: center;
+}
+img{
+    max-width: 700px;
+
+}
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+    margin: 10px;
+    font: 24px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+nav a{
+    color: #e3a4c0;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color: #bd89a1;
+}
+main{
+    padding: 20px;
+    text-align: center;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr);
+    
+}
+.gallery img:hover{
+   transform: scale(1.5);
+}
+footer{
+    background-color: #904985;
+    color: #e3a4c0;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+@meda (min-width: 600px) {
+   nav {
+        flex-direction: row;
+        justify-content: center;
+   }
+   h1{
+       font-size: 36px;
+   }
+   .gallery {
+       grid-template-columns: repeat(2, 1fr);
+   }
+}
+@media(minwidth: 900px) {
+   nav {
+        max-width: 1200px;
+        margin: 0 auto;
+   }
+   h1{
+       font-size: 36px;
+   }
+   .gallery {
+       grid-template-columns: repeat(3, 1fr);
+   }
+}
